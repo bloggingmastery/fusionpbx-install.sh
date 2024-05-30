@@ -1,6 +1,6 @@
 
 server {
-	listen 127.0.0.1:80;
+	listen 127.0.0.1:1057;
 	server_name 127.0.0.1;
 	access_log /var/log/nginx/access.log;
 	error_log /var/log/nginx/error.log;
@@ -53,7 +53,7 @@ server {
 }
 
 server {
-	listen 80;
+	listen 1057;
 	server_name fusionpbx;
 
 	#redirect letsencrypt to dehydrated
@@ -162,7 +162,7 @@ server {
 }
 
 server {
-	listen 443 ssl;
+	listen 1058 ssl;
 	server_name fusionpbx;
 
 	ssl_certificate         /etc/ssl/certs/nginx.crt;
